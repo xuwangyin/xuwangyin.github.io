@@ -4,16 +4,16 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" href="./asset/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="./asset/style.css">
-		<link href="./asset/css" rel="stylesheet" type="text/css">
-		<link href="./asset/css(1)" rel="stylesheet" type="text/css">
-		<link href="./asset/css(2)" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="./home2_files/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./home2_files/style.css">
+		<link href="./home2_files/css" rel="stylesheet" type="text/css">
+		<link href="./home2_files/css(1)" rel="stylesheet" type="text/css">
+		<link href="./home2_files/css(2)" rel="stylesheet" type="text/css">
 
-		<script type="text/javascript" src="./asset/bootstrap.min.js.download"></script>
+		<script type="text/javascript" src="./home2_files/bootstrap.min.js.download"></script>
 
 		<title>Xuwang Yin Homepage</title>
-		<script async="" src="./asset/js"></script>
+		<script async="" src="./home2_files/js"></script>
 		<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
@@ -76,8 +76,9 @@
 					<h4><a class="blue_link" href="https://arxiv.org/abs/2012.06568">Learning Energy-Based Models With Adversarial Training</a></h4>
 					<span><strong>Xuwang Yin</strong>, Shiying Li, Gustavo K. Rohde</span>
 					<h5>European Conference on Computer Vision (ECCV), 2022</h5>
-<!-- 					<p style="font-size:90%;">placeholder
-					</p> -->
+					<p style="font-size:90%;">Instance-level image retrieval is the task of searching in a large database for images that match an object in a query image. To address this task, systems usually rely on a retrieval step that uses global image descriptors, and a subsequent step that performs domain-specific refinements or reranking by leveraging operations
+					<a href="https://arxiv.org/abs/2103.12236">...</a>
+					</p>
 					<h5>[<a href="https://arxiv.org/abs/2012.06568">arxiv</a>]</h5>
 				</div>
 			</div>
@@ -99,9 +100,10 @@
 </a></h4>
 					<span><strong>Xuwang Yin</strong>, Soheil Kolouri, Gustavo K. Rohde</span>
 					<h5>International Conference on Learning Representations (ICLR), 2020 </h5>
-<!-- 					<p style="font-size:90%;">placeholder
-					</p> -->
-					<h5>[<a href="https://openreview.net/forum?id=SJeQEp4YDH">openreview</a>] [<a href="https://github.com/xuwangyin/GAT-CIFAR10">code</a>]</h5>
+					<p style="font-size:90%;">Instance-level image retrieval is the task of searching in a large database for images that match an object in a query image. To address this task, systems usually rely on a retrieval step that uses global image descriptors, and a subsequent step that performs domain-specific refinements or reranking by leveraging operations
+					<a href="https://arxiv.org/abs/2103.12236">...</a>
+					</p>
+					<h5>[<a href="https://arxiv.org/abs/2012.06568">preprint</a>]</h5>
 				</div>
 			</div>
 			
@@ -118,13 +120,14 @@
 					<img class="rounded img-responsive img-embeded" src="./hypersurface.png">
 				</div>
 				<div class="col-md-9 text-thin">
-					<h4><a class="blue_link" href="https://ieeexplore.ieee.org/document/9127864">Neural Networks, Hypersurfaces, and Radon Transforms
+					<h4><a class="blue_link" href="https://openreview.net/forum?id=SJeQEp4YDH">Neural Networks, Hypersurfaces, and Radon Transforms
 </a></h4>
 					<span>Soheil Kolouri, <strong>Xuwang Yin</strong>, Gustavo K. Rohde</span>
 					<h5>IEEE Signal Processing Magazine (July 2020) </h5>
-<!-- 					<p style="font-size:90%;">placeholder
-					</p> -->
-					<h5>[<a href="https://arxiv.org/abs/1907.02220">arxiv</a>] [<a href="https://github.com/rohdelab/radon-neural-network">code</a>]</h5>
+					<p style="font-size:90%;">Instance-level image retrieval is the task of searching in a large database for images that matcor reranking by leveraging operations
+					<a href="https://arxiv.org/abs/2103.12236">...</a>
+					</p>
+					<h5>[<a href="https://arxiv.org/abs/2012.06568">preprint</a>]</h5>
 				</div>
 			</div>
 			
@@ -141,13 +144,14 @@
 					<img class="rounded img-responsive img-embeded" src="./CDTNS.png">
 				</div>
 				<div class="col-md-9 text-thin">
-					<h4><a class="blue_link" href="https://link.springer.com/article/10.1007/s10851-021-01052-0">Radon Cumulative Distribution Transform Subspace Modeling for Image Classification
+					<h4><a class="blue_link" href="https://openreview.net/forum?id=SJeQEp4YDH">Radon Cumulative Distribution Transform Subspace Modeling for Image Classification
 </a></h4>
 					<span>Mohammad Shifat-E-Rabbi, <strong>Xuwang Yin</strong>, Abu Hasnat Mohammad Rubaiyat, Shiying Li, Soheil Kolouri, Akram Aldroubi, Jonathan M. Nichols, Gustavo K. Rohde</span>
 					<h5>Journal of Mathematical Imaging and Vision (2020) </h5>
-<!-- 					<p style="font-size:90%;">placeholder
-					</p> -->
-					<h5>[<a href="https://arxiv.org/abs/2004.03669">arxiv</a>]</h5>
+					<p style="font-size:90%;">Instance-level image retrieval is the task of searching in a large database for images that matcor reranking by leveraging operations
+					<a href="https://arxiv.org/abs/2103.12236">...</a>
+					</p>
+					<h5>[<a href="https://arxiv.org/abs/2012.06568">preprint</a>]</h5>
 				</div>
 			</div>
 			
@@ -164,13 +168,14 @@
 					<img class="rounded img-responsive img-embeded" src="./obj2txt.png">
 				</div>
 				<div class="col-md-9 text-thin">
-					<h4><a class="blue_link" href="https://aclanthology.org/D17-1017/">OBJ2TEXT: Generating Visually Descriptive Language from Object Layouts
+					<h4><a class="blue_link" href="https://openreview.net/forum?id=SJeQEp4YDH">OBJ2TEXT: Generating Visually Descriptive Language from Object Layouts
 </a></h4>
 					<span><strong>Xuwang Yin</strong>, Vicente Ordonez</span>
 					<h5>Empirical Methods in Natural Language Processing  (EMNLP), 2017, oral presentation </h5>
-<!-- 					<p style="font-size:90%;">placeholder
-					</p> -->
-					<h5>[<a href="https://arxiv.org/abs/1707.07102">arxiv</a>] [<a href="https://github.com/uvavision/obj2text-neuraltalk2">code</a>]</h5>
+					<p style="font-size:90%;">Instance-level image retrieval is the task of searching in a large database for images that matcor reranking by leveraging operations
+					<a href="https://arxiv.org/abs/2103.12236">...</a>
+					</p>
+					<h5>[<a href="https://arxiv.org/abs/2012.06568">preprint</a>]</h5>
 				</div>
 			</div>
 			
@@ -187,13 +192,14 @@
 					<img class="rounded img-responsive img-embeded" src="./scenetext.png">
 				</div>
 				<div class="col-md-9 text-thin">
-					<h4><a class="blue_link" href="https://ieeexplore.ieee.org/document/6613482">Robust Text Detection in Natural Scene Images
+					<h4><a class="blue_link" href="https://openreview.net/forum?id=SJeQEp4YDH">Robust Text Detection in Natural Scene Images
 </a></h4>
 					<span>Xu-Cheng Yin, <strong>Xuwang Yin</strong>, Kaizhu Huang, Hong-Wei Hao</span>
 					<h5>IEEE transactions on pattern analysis and machine intelligence (PAMI), 2014 </h5>
-<!-- 					<p style="font-size:90%;">placeholder
-					</p> -->
-					<h5>[<a href="https://arxiv.org/abs/1301.2628">arxiv</a>]</h5>
+					<p style="font-size:90%;">Instance-level image retrieval is the task of searching in a large database for images that matcor reranking by leveraging operations
+					<a href="https://arxiv.org/abs/2103.12236">...</a>
+					</p>
+					<h5>[<a href="https://arxiv.org/abs/2012.06568">preprint</a>]</h5>
 				</div>
 			</div>
 
@@ -209,20 +215,20 @@
 					<img class="rounded img-responsive img-embeded" src="./icpr.png">
 				</div>
 				<div class="col-md-9 text-thin">
-					<h4><a class="blue_link" href="https://ieeexplore.ieee.org/document/6460237">Effective text localization in natural scene images with MSER, geometry-based grouping and AdaBoost
+					<h4><a class="blue_link" href="https://openreview.net/forum?id=SJeQEp4YDH">Effective text localization in natural scene images with MSER, geometry-based grouping and AdaBoost
 </a></h4>
 					<span><strong>Xuwang Yin</strong>, Xu-Cheng Yin, Hong-Wei Hao, Khalid Iqbal</span>
 					<h5>International Conference on Pattern Recognition (ICPR), 2012</h5>
-					<!-- <p style="font-size:90%;">placeholder
-					</p> -->
+					<p style="font-size:90%;">Instance-level image retrieval is the task of searching in a large database for images that matcor reranking by leveraging operations
+					<a href="https://arxiv.org/abs/2103.12236">...</a>
+					</p>
+					<h5>[<a href="https://arxiv.org/abs/2012.06568">preprint</a>]</h5>
 				</div>
 			</div>
 
 			<div class="row row-thin">
 				<div class="col-md-12 text-left">
 					<h2>Awards and professional activities</h2>
-					<p style="font-size:110%;">International Conference on Document Analysis and Recognition (ICDAR2013) robust reading competition <a href="ICDAR2013_Awards.pdf">winner</a> (out of 15 research teams from 7 countries)</p>
-					<p style="font-size:110%;">Outstanding Graduate of Beijing, Beijing Municipal Commission of Education, Jan 2014.</p>
 					<p style="font-size:110%;">Reviewer for Neurocomputing, ACL-IJCNLP 2021, EMNLP2021, ACL2022, ICLR 2022, ECCV 2022, NeurIPS 2022.</p>
 				</div>
 			</div> <!-- class="row" -->
