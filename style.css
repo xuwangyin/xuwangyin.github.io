@@ -86,20 +86,6 @@ a:hover {
     margin-top: 1rem;
 }
 
-.link a {
-    color: var(--text-color);
-    font-weight: 400;
-    font-size: 0.9rem;
-}
-
-.secondary {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-}
-
-.secondary a {
-    font-weight: 400;
-}
 
 /* Footer */
 footer {
