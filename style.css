@@ -91,6 +91,15 @@ a:hover {
     font-weight: 500;
 }
 
+.secondary {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.secondary a {
+    font-weight: 400;
+}
+
 /* Footer */
 footer {
     margin-top: 5rem;
