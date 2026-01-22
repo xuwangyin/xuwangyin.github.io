@@ -1,0 +1,130 @@
+/* Minimal, content-focused design */
+
+:root {
+    --text-color: #1a1a1a;
+    --text-secondary: #555;
+    --link-color: #1a1a1a;
+    --background: #fafafa;
+    --max-width: 640px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+    color: var(--text-color);
+    background: var(--background);
+    -webkit-font-smoothing: antialiased;
+}
+
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+}
+
+/* Header */
+header {
+    margin-bottom: 4rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+}
+
+.tagline {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Sections */
+section {
+    margin-bottom: 3.5rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+a:hover {
+    text-decoration-thickness: 2px;
+}
+
+.link {
+    margin-top: 1rem;
+}
+
+.link a {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+footer p {
+    color: var(--text-color);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 3rem 1.25rem 4rem;
+    }
+
+    header {
+        margin-bottom: 3rem;
+    }
+
+    section {
+        margin-bottom: 2.5rem;
+    }
+}
