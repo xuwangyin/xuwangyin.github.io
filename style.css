@@ -2,8 +2,11 @@
 
 :root {
     --text-color: #1a1a1a;
+    --text-body: #2b2b2b;
     --text-secondary: #555;
+    --text-muted: #777;
     --link-color: #1a1a1a;
+    --underline-color: #c4c4c4;
     --background: #fafafa;
     --max-width: 640px;
 }
@@ -19,9 +22,9 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "Palatino Linotype", Palatino, "Book Antiqua", "TeX Gyre Pagella", "URW Palladio L", P052, serif;
     line-height: 1.7;
-    color: var(--text-color);
+    color: var(--text-body);
     background: var(--background);
     -webkit-font-smoothing: antialiased;
 }
@@ -40,8 +43,9 @@ header {
 h1 {
     font-size: 2rem;
     font-weight: 600;
+    color: var(--text-color);
     margin-bottom: 1.5rem;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
 }
 
 .tagline {
@@ -50,60 +54,79 @@ h1 {
     line-height: 1.6;
 }
 
+.contact {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25em;
+    margin-top: 1.5rem;
+}
+
 /* Sections */
 section {
     margin-bottom: 3.5rem;
 }
 
 h2 {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-weight: 600;
+    color: var(--text-color);
     margin-bottom: 1rem;
-    letter-spacing: -0.01em;
 }
 
 p {
     margin-bottom: 1rem;
-    color: var(--text-secondary);
 }
 
 p:last-child {
     margin-bottom: 0;
 }
 
+/* Paper lists */
+.papers {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.papers li::before {
+    content: "→";
+    margin-right: 0.5em;
+    color: var(--text-muted);
+}
+
+.venue {
+    color: var(--text-muted);
+}
+
+.venue::before {
+    content: "· ";
+}
+
+.note {
+    margin-top: 0.25rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
 /* Links */
 a {
     color: var(--link-color);
     text-decoration: underline;
-    text-underline-offset: 2px;
+    text-decoration-color: var(--underline-color);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.15s;
 }
 
 a:hover {
-    text-decoration-thickness: 2px;
+    text-decoration-color: currentColor;
 }
-
-.link {
-    margin-top: 1rem;
-}
-
 
 /* Footer */
 footer {
     margin-top: 5rem;
     padding-top: 2rem;
     border-top: 1px solid #e0e0e0;
-}
-
-footer p {
-    color: var(--text-color);
-}
-
-footer a {
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
 
 /* Responsive */
