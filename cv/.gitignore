@@ -1,0 +1,8 @@
+# LaTeX build artifacts; the published PDF lives at ../xuwangyin_cv.pdf
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.pdf

@@ -1,0 +1,229 @@
+% CV of Xuwang Yin
+% Build: latexmk -pdf xuwangyin_cv.tex && cp xuwangyin_cv.pdf ../
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+% Make ligatures (fi, ff, ...) map back to Unicode so the text is searchable/parsable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\usepackage[margin=1in]{geometry}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[normalem]{ulem}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{linkblue}{HTML}{1A5FD6}
+\newcommand{\link}[2]{\href{#1}{\textcolor{linkblue}{\uline{#2}}}}
+\newcommand{\me}{\textbf{Xuwang Yin}}
+
+\hypersetup{pdftitle={Xuwang Yin - CV}, pdfauthor={Xuwang Yin}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\linespread{1.08}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+
+% Dated entries: date column | vertical rule | content
+\newcolumntype{D}{>{\raggedright\arraybackslash\small}p{1.25cm}}
+\newenvironment{entries}
+  {\par\noindent\tabularx{\textwidth}{@{}D|>{\raggedright\arraybackslash}X@{}}}
+  {\endtabularx\par}
+\newcommand{\entryhead}[1]{\textbf{#1}}
+\newcommand{\entrysep}{\\[-4pt] & \\[-4pt]}
+
+\setlist[itemize]{label=-, nosep, leftmargin=2.2em, labelsep=1.2em}
+\newenvironment{pubs}
+  {\begin{itemize}[label=-, leftmargin=2.8em, labelsep=1.6em, itemsep=10pt, parsep=0pt, topsep=4pt]\interlinepenalty=10000 }% keep each entry on one page
+  {\end{itemize}}
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+\begin{center}
+  {\LARGE Xuwang Yin}\\[8pt]
+  $\bullet$ \link{mailto:xuwangyin@gmail.com}{xuwangyin@gmail.com}
+  $\bullet$ Qingdao, Shandong, China\\[2pt]
+  $\bullet$ \link{http://www.linkedin.com/in/xuwangyin}{LinkedIn}
+  $\bullet$ \link{https://github.com/xuwangyin}{Github}
+  $\bullet$ \link{https://scholar.google.com/citations?user=c425B6UAAAAJ&hl}{Google Scholar}
+  $\bullet$ (434) 327-0325
+\end{center}
+
+%-------------------------------------------------------------------------------
+\section*{Education}
+\begin{entries}
+2016 -- 2022 &
+  \entryhead{Ph.D., Computer Engineering, University of Virginia, United States}\newline
+  {\small Ph.D. thesis: Generative Modeling With Adversarial Training\newline
+  Supervisor: Prof. Gustavo Rohde\newline
+  Research focus: adversarial machine learning, energy-based generative models, multimodal models,
+  optimal transport in signal processing}
+\entrysep
+2011 -- 2014 &
+  \entryhead{M.Eng., Computer Engineering, University of Science and Technology Beijing, China}\newline
+  {\small Master thesis: Robust Text Detection in Natural Scene Images\newline
+  Supervisor: Prof. Xu-Cheng Yin}
+\entrysep
+2007 -- 2011 &
+  \entryhead{B.Eng., Computer Science and Engineering, University of Science and Technology Beijing, China}
+\end{entries}
+
+%-------------------------------------------------------------------------------
+\section*{Employment}
+\begin{entries}
+2025 -- Present &
+  \entryhead{Independent Researcher, San Francisco / Qingdao}\newline
+  {\small Scalable energy-based generative models. Developed an adversarial training framework that unifies
+  generation and classification in a single model, the first to scale energy-based models to
+  ImageNet 256$\times$256 (ICLR 2026).}
+\entrysep
+2023 -- 2025 &
+  \entryhead{Research Engineer, \link{https://www.safe.ai/}{Center for AI Safety}, San Francisco, United States}\newline
+  {\small Research on LLM safety evaluation, automated red teaming, adversarial robustness, and emergent
+  value systems in AI. Contributed to
+  \link{https://arxiv.org/abs/2402.04249}{HarmBench} (ICML 2024),
+  \link{https://arxiv.org/abs/2502.08640}{Utility Engineering} (NeurIPS 2025),
+  \link{https://arxiv.org/abs/2310.01405}{Representation Engineering}, and
+  \link{https://arxiv.org/abs/1908.08016}{Unforeseen Adversaries}.}
+\entrysep
+2014 -- 2015 &
+  \entryhead{Computer Vision Engineer, Yuanli Education Technology, Beijing, China}\newline
+  {\small Text detection and recognition in natural images.}
+\end{entries}
+
+%-------------------------------------------------------------------------------
+\section*{Research Interests}
+{\small
+\hspace*{1.5em}\textbf{Energy-based generative models}
+\begin{itemize}[leftmargin=4em]
+  \item Scalable training of energy-based models via adversarial training
+  \item Text-to-image generation with energy-based models
+  \item Hybrid discriminative-generative models
+\end{itemize}
+\hspace*{1.5em}\textbf{Machine learning robustness and security}
+\begin{itemize}[leftmargin=4em]
+  \item Training adversarially robust image models and LLMs
+  \item Safety evaluation/red-teaming/jailbreaking LLMs
+  \item Detecting adversarial examples
+\end{itemize}
+}
+
+%-------------------------------------------------------------------------------
+\section*{Selected Publications}
+{\small
+\begin{pubs}
+\item Scalable Energy-Based Models via Adversarial Training: Unifying Discrimination and Generation\\
+  \me, Claire Zhang, Julie Steele, Nir Shavit, Tony T. Wang\\
+  International Conference on Learning Representations (\textbf{ICLR 2026})
+  [\link{https://www.arxiv.org/abs/2510.13872}{arxiv}]
+
+\item Utility Engineering: Analyzing and Controlling Emergent Value Systems in AIs
+  [\link{https://github.com/centerforaisafety/emergent-values}{code}][\link{https://arxiv.org/abs/2502.08640}{arxiv}]\\
+  Mantas Mazeika, \me, Rishub Tamirisa, Jaehyuk Lim, Bruce W. Lee, Richard Ren, Long
+  Phan, Norman Mu, Adam Khoja, Oliver Zhang, Dan Hendrycks\\
+  \textbf{NeurIPS 2025}
+
+\item RenderAttack: Hundreds of Adversarial Attacks Through Differentiable Texture Generation\\
+  Dron Hazra, Alex Bie, Mantas Mazeika, \me, Andy Zou, Dan Hendrycks, Maximilian Kaufmann\\
+  \textbf{NeurIPS 2024} Workshop on New Frontiers in Adversarial Machine Learning
+
+\item HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal
+  [\link{https://arxiv.org/abs/2402.04249}{arxiv}] [\link{https://www.harmbench.org}{website}]\\
+  Mantas Mazeika, Long Phan, \me, Andy Zou, Zifan Wang, Norman Mu, Ellie Sakhaee,
+  Nathaniel Li, Steven Basart, Bo Li, David Forsyth, Dan Hendrycks\\
+  International Conference on Machine Learning (\textbf{ICML 2024})
+
+\item End-to-End Signal Classification in Signed Cumulative Distribution Transform Space
+  [\link{https://arxiv.org/abs/2205.00348}{arxiv}]\\
+  AMH Rubaiyat, Shiying Li, \me, Mohammad Shifat E Rabbi, Yan Zhuang, Gustavo K. Rohde\\
+  IEEE Transactions on Pattern Analysis and Machine Intelligence (\textbf{PAMI 2023})
+
+\item A Digital Camera-based Eye Movement Assessment Method for NeuroEye Examination
+  [\link{https://ieeexplore.ieee.org/document/10152473}{link}]\\
+  Mohamed Abul Hassan, \textbf{Xuwang Yin*}, Yan Zhuang*, Chad M Aldridge, Timothy McMurry,
+  Andrew M Southerland, Gustavo K Rohde\\
+  IEEE Journal of Biomedical and Health Informatics, 2023
+
+\item Representation Engineering: A Top-Down Approach to AI Transparency
+  [\link{https://arxiv.org/abs/2310.01405}{arxiv}]\\
+  Andy Zou, Long Phan, Sarah Chen, James Campbell, Phillip Guo, Richard Ren, Alexander Pan, \me,
+  Mantas Mazeika, Ann-Kathrin Dombrowski, Shashwat Goel, Nathaniel Li, Michael J. Byun, Zifan
+  Wang, Alex Mallen, Steven Basart, Sanmi Koyejo, Dawn Song, Matt Fredrikson, J. Zico Kolter, Dan
+  Hendrycks\\
+  arXiv preprint, 2023
+
+\item Testing Robustness Against Unforeseen Adversaries
+  [\link{https://arxiv.org/abs/1908.08016}{arxiv}] [\link{https://github.com/centerforaisafety/adversarial-corruptions}{github}]\\
+  Max Kaufmann, Daniel Kang, Yi Sun, Steven Basart, \me, Mantas Mazeika, Akul Arora, Adam
+  Dziedzic, Franziska Boenisch, Tom Brown, Jacob Steinhardt, Dan Hendrycks\\
+  arXiv preprint, 2023
+
+\item Learning Energy-Based Models With Adversarial Training\\
+  \me, Shiying Li, Gustavo K. Rohde\\
+  European Conference on Computer Vision (\textbf{ECCV 2022})\ \
+  [\link{https://github.com/xuwangyin/AT-EBMs}{code}]
+  [\link{https://arxiv.org/abs/2012.06568}{arxiv}]
+  [\link{https://drive.google.com/file/d/14ctDo9eEvg0Y5aZnMKSivTDRFFR0PbHY/view?usp=sharing}{poster}]
+  [\link{https://www.youtube.com/watch?v=B0PSfB-UqXw}{video}]
+
+\item Radon Cumulative Distribution Transform Subspace Modeling for Image Classification\\
+  M Shifat-E-Rabbi, \me, Abu Hasnat Mohammad Rubaiyat, Shiying Li, Soheil Kolouri, Akram
+  Aldroubi, Jonathan M. Nichols, Gustavo K. Rohde\\
+  Journal of Mathematical Imaging and Vision, 2021
+  [\link{https://github.com/rohdelab/rcdt_ns_classifier}{code}][\link{https://link.springer.com/article/10.1007/s10851-021-01052-0}{Link}]
+
+\item GAT: Generative Adversarial Training for Adversarial Example Detection and Robust Classification\\
+  \me, Soheil Kolouri, Gustavo K. Rohde\\
+  International Conference on Learning Representations (\textbf{ICLR 2020})
+  [\link{https://github.com/xuwangyin/GAT-Generative-Adversarial-Training}{code}][\link{https://arxiv.org/abs/1905.11475}{arxiv}]
+
+\item Neural Networks, Hypersurfaces, and Radon Transforms\\
+  Soheil Kolouri, \me, Gustavo K. Rohde\\
+  IEEE Signal Processing Magazine, 2020
+  [\link{https://github.com/rohdelab/radon-neural-network}{code}][\link{https://ieeexplore.ieee.org/document/9127864}{IEEEXplore link}][\link{https://arxiv.org/abs/1907.02220}{arxiv}]
+
+\item OBJ2TEXT: Generating Visually Descriptive Language from Object Layouts
+  [\link{https://github.com/uvavision/obj2text-neuraltalk2}{code}][\link{https://www.aclweb.org/anthology/D17-1017/}{Link}]\\
+  \me{} and Vicente Ordonez\\
+  Empirical Methods in Natural Language Processing (\textbf{EMNLP 2017}, oral presentation)
+
+\item Robust Text Detection in Natural Scene Images\\
+  Xu-Cheng Yin, \me, Kaizhu Huang, Hong-Wei Hao\\
+  IEEE Transactions on Pattern Analysis and Machine Intelligence (\textbf{PAMI 2014})
+  [\link{https://ieeexplore.ieee.org/document/6613482}{link}]
+
+\item Effective text localization in natural scene images with MSER, geometry-based grouping and AdaBoost\\
+  \me, Xu-Cheng Yin, Hong-Wei Hao, Khalid Iqbal\\
+  International Conference on Pattern Recognition (\textbf{ICPR 2012})
+  [\link{https://ieeexplore.ieee.org/document/6460237/}{IEEEXplore link}]
+\end{pubs}
+}
+
+%-------------------------------------------------------------------------------
+\section*{Awards}
+{\small
+\begin{itemize}[leftmargin=2.8em, labelsep=1.6em]
+  \item \link{https://neurips.cc/Conferences/2022/ProgramCommittee}{Top Reviewer of NeurIPS 2022}
+  \item International Conference on Document Analysis and Recognition (ICDAR2013) robust reading competition
+        \link{https://drive.google.com/file/d/1UlLQCrQDzNDNlBIvW3RkJ0prR8U1VGMA/view}{winner}
+        (out of 15 research teams from 7 countries)
+  \item Outstanding Graduate of Beijing, Beijing Municipal Commission of Education, Jan 2014.
+\end{itemize}
+}
+
+%-------------------------------------------------------------------------------
+\section*{Professional Service}
+{\small
+ACL-IJCNLP 2021, EMNLP 2021, ACL 2022, ICLR 2022, ECCV 2022, NeurIPS 2022, NeurIPS 2024, ACL 2024,
+NeurIPS 2025, ICLR 2026, Neurocomputing journal
+}
+
+\end{document}
