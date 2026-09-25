@@ -9,6 +9,7 @@
 % Make ligatures (fi, ff, ...) map back to Unicode so the text is searchable/parsable
 \input{glyphtounicode}
 \pdfgentounicode=1
+% Palatino ligates "ij" into one glyph (extracted as U+0133), so write it as i{}j
 
 \usepackage[margin=1in]{geometry}
 \usepackage{array}
@@ -71,12 +72,12 @@
   optimal transport in signal processing}
 \entrysep
 2011 -- 2014 &
-  \entryhead{M.Eng., Computer Engineering, University of Science and Technology Beijing,~China}\newline
+  \entryhead{M.Eng., Computer Engineering, University of Science and Technology Bei{}jing,~China}\newline
   {\small Master thesis: Robust Text Detection in Natural Scene Images\newline
   Supervisor: Prof. Xu-Cheng Yin}
 \entrysep
 2007 -- 2011 &
-  \entryhead{B.Eng., Computer Science and Engineering, University of Science and Technology Beijing,~China}
+  \entryhead{B.Eng., Computer Science and Engineering, University of Science and Technology Bei{}jing,~China}
 \end{entries}
 
 %-------------------------------------------------------------------------------
@@ -94,11 +95,12 @@
   value systems in AI. Contributed to
   \link{https://arxiv.org/abs/2402.04249}{HarmBench} (ICML 2024),
   \link{https://arxiv.org/abs/2502.08640}{Utility Engineering} (NeurIPS 2025),
+  \link{https://arxiv.org/abs/2503.03750}{MASK~Benchmark} (NeurIPS 2026),
   \link{https://arxiv.org/abs/2310.01405}{Representation Engineering}, and
   \link{https://arxiv.org/abs/1908.08016}{Unforeseen Adversaries}.}
 \entrysep
 2014 -- 2015 &
-  \entryhead{Computer Vision Engineer, Yuanli Education Technology, Beijing, China}\newline
+  \entryhead{Computer Vision Engineer, Yuanli Education Technology, Bei{}jing, China}\newline
   {\small Text detection and recognition in natural images.}
 \end{entries}
 
@@ -116,6 +118,11 @@ safety evaluation and red-teaming of LLMs, and adversarial example detection.\pa
 {\small
 \pubgroup{Conference Papers}
 \begin{pubs}
+\item The MASK Benchmark: Disentangling Honesty From Accuracy in AI Systems\\
+  Richard Ren, Arunim Agarwal, \ldots, \me, \ldots, Dan Hendrycks\\
+  \venue{NeurIPS Evaluations and Datasets Track}{NeurIPS 2026}
+  [\link{https://arxiv.org/abs/2503.03750}{arXiv}]
+
 \item Scalable Energy-Based Models via Adversarial Training: Unifying Discrimination and Generation\\
   \me, Claire Zhang, Julie Steele, Nir Shavit, Tony T. Wang\\
   \venue{International Conference on Learning Representations}{ICLR 2026}
@@ -215,7 +222,7 @@ safety evaluation and red-teaming of LLMs, and adversarial example detection.\pa
 \section*{Awards}
 \begin{entries}
 2022 & {\small \link{https://neurips.cc/Conferences/2022/ProgramCommittee}{Top Reviewer}, NeurIPS 2022}\\
-2014 & {\small Outstanding Graduate of Beijing, Beijing Municipal Commission of Education}\\
+2014 & {\small Outstanding Graduate of Bei{}jing, Bei{}jing Municipal Commission of Education}\\
 2013 & {\small \link{https://drive.google.com/file/d/1UlLQCrQDzNDNlBIvW3RkJ0prR8U1VGMA/view}{Winner},
        ICDAR 2013 Robust Reading Competition (15 teams from 7 countries)}
 \end{entries}
