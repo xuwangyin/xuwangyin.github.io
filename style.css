@@ -96,10 +96,15 @@ p:last-child {
 
 .venue {
     color: var(--text-muted);
+    white-space: nowrap;
 }
 
 .venue::before {
     content: "· ";
+}
+
+.muted {
+    color: var(--text-muted);
 }
 
 .note {
