@@ -84,13 +84,11 @@ p:last-child {
 
 /* Paper lists */
 .papers {
-    list-style: none;
     margin-top: 1rem;
+    padding-left: 1.2em;
 }
 
-.papers li::before {
-    content: "→";
-    margin-right: 0.5em;
+.papers li::marker {
     color: var(--text-muted);
 }
 
@@ -104,12 +102,6 @@ p:last-child {
 }
 
 .muted {
-    color: var(--text-muted);
-}
-
-.note {
-    margin-top: 0.25rem;
-    font-size: 0.85rem;
     color: var(--text-muted);
 }
 
